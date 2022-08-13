@@ -279,17 +279,16 @@
 }
 
 @media screen and (max-width:380px) {
-    .footer {
-        width: 150%;
+    .squared {
+        min-width: 85px;
     }
-
-    body {
-        margin: 10px;
+    .wider {
+        min-width: 200px;
     }
-}
-
-@media screen and (max-width:300px) {
-    .footer {
-        width: 200%;
+    .wide {
+        min-width: 110px;
+    }
+    .weather-box {
+        margin: 3px;
     }
 }
