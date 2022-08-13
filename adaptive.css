@@ -1,0 +1,295 @@
+/* Desktops */
+
+@media screen and (max-width:1206px) {
+    .column__item {
+        font-size: 19px;
+    }
+
+    .header, .main {
+        min-width: 70%;
+    }
+    .weather-box {
+        height: auto!important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .header, .main {
+        min-width: 77%;
+    }
+}
+
+/* Tablets */
+
+@media screen and (max-width: 1000px) {
+
+    .header {
+        margin-top: 40px;
+    }
+
+    .main {
+        margin-bottom: 100px;
+    }
+    .squared {
+        min-width: 180px;
+        width: 180px;
+    }
+
+    .image-box {
+        width: 90px;
+        height: 90px;
+    }
+    .image-box__image {
+        width: 80px;
+    }
+
+    .wide, .wider {
+        width: 70%;
+    }
+
+    .wider {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .turbine-body { 
+        width: 9.5vw;
+        min-width: 70px;
+    }
+    .column__item {
+        font-size: 1.8vw;
+        margin-top: 10px;
+        
+    }
+    .logo__text {
+        font-size: 30px;
+    }
+
+    .logo__image {
+        width: 90px;
+    }
+
+    #current-temp {
+        font-size: 40px;
+    }
+
+    #feels-like {
+        font-size: 18px;
+    }
+    #min-max {
+        font-size: 20px;
+    }
+    #conditions-short {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        margin-top: 40px;
+    }
+    .main {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .weather-box {
+        min-width: 150px;
+    }
+
+    .squared {
+        width: 20%;
+    }
+
+    .column__item {
+        margin: 2px;
+    }
+    .image-box {
+        width: 70px;
+        height: 70px;
+    }
+    .image-box__image {
+        width: 60px;
+    }
+
+    #current-temp {
+        font-size: 35px;
+        margin-left: 15px;
+    }
+
+    #feels-like {
+        font-size: 15px;
+    }
+    #min-max {
+        font-size: 17px;
+    }
+    #conditions-short {
+        font-size: 20px;
+    }
+
+    .column__item {
+        font-size: 14px;
+    }
+
+    .information__city {
+        font-size: 25px;
+    }
+
+    .information__date {
+        font-size: 20px;
+    }
+
+    .search__input {
+        font-size: 17px;
+    }
+
+    .weather-box__name {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 725px) {
+    .weather-box {
+        margin: 5px;
+    }
+
+    .search__input {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .search {
+        margin-top: 40px;
+    }
+
+    .logo__text {
+        font-size: 22px;
+
+    }
+    .logo__image {
+        width: 80px;
+    }
+
+
+}
+
+@media screen and (max-width:686px) {
+
+    .main, .header  {
+        width: 80%;
+    }
+    .squared {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    .weather-box {
+        height: 120px;
+    }
+
+    .column__item {
+        font-size: 12px;
+        height: auto;
+        margin: 3px;
+    }
+    .conditions-detailed {
+        height: auto;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main, .header  {
+        width: 80%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+    .search {
+        margin-top: 60px;
+    }
+    .information {
+        margin-top: 20px;
+    }
+
+    .information__date {
+        font-size: 16px;
+    }
+    .information__city {
+        font-size: 19px;
+    }
+    .column {
+        margin: 2px;
+    }
+    .weather-box__name {
+        font-size: 12px;
+    }
+}
+
+/* Mobiles */
+
+@media screen and (max-width:550px) {
+    .squared {
+        width: 100px;
+        min-width: 100px;
+    }
+    .turbine-body {
+        min-width: 60px;
+    }
+
+    .weather-box {
+        height: 100px;
+        margin: 5px;
+        border-radius: 25px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .header, .main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .header, .main {
+        width: 100%;
+    }
+    .squared {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #feels-like {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .squared {
+        width: 80px;
+    }
+
+    .wider {
+        min-width: 260px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .footer {
+        width: 150%;
+    }
+
+    body {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .footer {
+        width: 200%;
+    }
+}

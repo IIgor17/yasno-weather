@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasno Weather</title>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import adaptive -->
+    <link rel="stylesheet" href="adaptive.css">
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <!-- Header with logo and search -->
+    <header class="header">
+        <div class="logo">
+            <img class="logo__image" src="images/logo.png" alt="Logo cloud">
+            <h1 class="logo__text">YasnoWeather</h1>
+        </div>
+
+        <div class="search">
+            <input class="search__input" type="text" placeholder="for example, Moscow...">
+            <img class="search__icon" src="images/search.png" alt="Search icon">
+        </div>
+    </header>
+    <!-- Main block with weather and details display -->
+    <main class="main">
+        <div class="information">
+            <p class="information__date">6 Aug 2022, 13:43</p>
+            <p class="information__city">Type to see today's weather in <span id="city">Your City</span>!</p>
+        </div>
+
+        <div class="weather">
+            <div class="weather__row">
+                <div class="weather-box squared">
+                    <p class="weather-box__name">Conditions</p>
+                    <div class="image-box light">
+                        <img class="image-box__image" id="conditions-image" src="images/sun.png" alt="Weather Icon">
+                    </div>
+                    <p id="conditions-short">Clear</p>
+                </div>
+                <div class="weather-box wider">
+                    <p class="weather-box__name _wide">Weather details</p>
+                    <div class="weather-info">
+                        <div class="column">
+                            <p class="column__item conditions-detailed"> Conditions: <span class="span-value" id="conditions-detailed"> clear sky with slight clouds</span> </p>
+                            <p class="column__item"> Visibility: <span class="span-value" id="visibility">10+ km</span></p>
+                            <p class="column__item"> Humidity: <span class="span-value" id="humidity">80%</span></p>
+                        </div>
+                        <div class="column">
+                            <p class="column__item"> Pressure: <span class="span-value" id="pressure">788mm</span></p>                           
+                            <p class="column__item"> Cloudiness: <span class="span-value" id="cloudiness">20%</span></p>                            
+                            <p class="column__item"> Sunrise: <span class="span-value" id="sunrise">5:32</span></p>                            
+                            <p class="column__item"> Sunset: <span class="span-value" id="sunset">19:56</span></p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="weather__row">
+                <div class="weather-box squared">
+                    <p class="weather-box__name">Temperature</p>
+                    <div class="temperature-info">
+                        <p id="current-temp">27°</p>
+                        <p id="feels-like">Feels like 25°</p>
+                        <p id="min-max"><span id="min">19°</span>/<span id="max">29°</span></p>
+                    </div>
+                </div>
+
+                <div class="weather-box wide">
+                    <p class="weather-box__name _wide">Wind</p>
+                    <div class="wind-info">
+                        <div class="column wind">
+                            <p class="column__item"> Speed: <span class="span-value" id="speed">2m/s</span></p>
+                            <p class="column__item"> Direction: <span class="span-value" id="direction">270°</span></p>
+                            <p class="column__item"> Gust: <span class="span-value" id="gust">4m/s</span></p>
+                        </div>
+                        <div class="animated-wind">
+                            <img class="turbine-body turb-body" src="images/turb-body.png" alt="Wind animation">
+                            <img class="turbine-body turb-head" src="images/turb-head.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="weather-box squared">
+                    <p class="weather-box__name">Night mode</p>
+                    <div class="image-box dark">
+                        <img class="image-box__image" id="night-mode" src="images/moon.png" alt="Moon">
+                    </div>
+                    <div class="switch">
+                        <div class="switch__toggle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <!-- Footer with contacts -->
+    <footer class="footer">
+        <div class="footer-col">
+            <p class="footer-col__text">Weather app by <b>IIgor17</b></p>
+            <div class="footer-links">
+                <a class="footer-links__link" href="#"><img class="link-img" src="https://img.icons8.com/ios-glyphs/344/github.png" alt="GitHub" width="38px"></a>
+                <a class="footer-links__link" href="#"><img class="link-img" src="https://cdn-icons-png.flaticon.com/512/2111/2111710.png" alt="Telegram" width="30px"></a>
+                <a class="footer-links__link" href="#"><img class="link-img" src="https://cdn-icons.flaticon.com/png/512/3670/premium/3670029.png?token=exp=1660038295~hmac=5565cf49d8398dddb90f174a5cba2753" alt="VK" width="30px"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

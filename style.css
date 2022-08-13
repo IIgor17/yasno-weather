@@ -1,0 +1,394 @@
+:root {
+    --text-color: #4b4b4b;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://cdn.glitch.global/b6a545d0-661f-43de-8b86-b6514cb0456b/bgbg.png?v=1659979499704');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+p {
+    margin: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 65%;
+    height: 130px;
+    margin-top: 20px;
+
+}
+
+/* Logo  */
+
+.logo {
+    height: 200px;
+    justify-self: flex-start;
+    width: 200px;
+}
+
+.logo__image {
+    width: 100px;
+    position: absolute;
+
+}
+
+.logo__text {
+    position: absolute;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-left: 20px;
+    font-size: 40px;
+    background-image: linear-gradient(to left, #e045af, #8a76c6);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Search */
+
+.search {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    padding: 2px 10px;
+    background-color: #fff;
+    
+}
+
+
+.search__input {
+    border: none;
+    padding: 0 30px 0 5px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+.search__input::placeholder{
+    color: #dddddd;
+    font-weight: 400;
+}
+.search__input:focus {
+    outline: none;
+}
+
+.search__icon {
+    width: 29px;
+    height: 29px;
+}
+
+/* Main section */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+/* Date, time and city */
+
+.information {
+    display: flex;
+    flex-direction: column;
+
+}
+.information__date {
+    font-size: 25px;
+    margin: 5px;
+    color: #fff;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.t);
+}
+
+.information__city {
+    font-size: 30px;
+    margin: 5px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.t);
+}
+
+#city {
+    font-weight: bold;
+}
+
+/* Weather block */
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 200px;
+}
+
+.weather__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-box {
+    background-color: rgb(255, 255, 255);
+    margin: 10px 10px 10px 10px;
+    height: 200px;
+    border-radius: 35px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.squared {
+    width: 200px;
+    min-width: 200px;
+}
+.wide {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.wider {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.weather-box__name {
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+._wide {
+    margin-left: 30px;
+}
+
+.image-box {
+    height: 110px;
+    width: 110px;
+    background-color: rgb(124, 201, 245);
+    border-radius: 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box__image {
+    width: 100px;
+}
+
+/* Weather details */
+
+.weather-info {
+    margin-left: 10px;
+    display: flex;
+    width: 95%;
+    height: 70%;
+    justify-content: space-between;
+}
+
+.column {
+    width: 50%;
+    margin: 10px 10px;
+}
+
+.column__item {
+    color: var(--text-color);
+    font-size: 21px;
+    height: auto;
+    margin: 10px;
+
+}
+
+.conditions-detailed {
+    padding-bottom: 0;
+
+}
+
+#conditions-short {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.span-value {
+    font-weight: 600;
+}
+
+.light {
+    background-color: #76d6ff;
+}
+
+.dark {
+    background-color: #3d6779;
+}
+
+/* Temperature */
+
+#current-temp {
+    font-size: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 20px;
+    color: var(--text-color);
+    width: auto;
+    display: inline-block;
+}
+
+#feels-like {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 4px 0;
+    color: var(--text-color);
+}
+
+#min-max {
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #cbcbcb;
+}
+
+#min, #max {
+    color: #a7a7a7;
+}
+
+/* Wind */
+
+.wind-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wind {
+    width: 70%;
+}
+
+/* Night mode switch */
+
+.switch {
+    background-color: #ebebeb;
+    width: 40%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: flex-start;
+}
+
+
+
+.switch__toggle {
+    width: 50%;
+    height: 80%;
+    background-color: #c9c9c9;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-radius: 20px;
+}
+
+
+/* Add text shadow to all p's */
+
+p {
+    text-shadow: 0px 0px 16px  rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+
+.footer {
+    box-shadow: 0 0 30px 0px rgba(47, 47, 47, 0.133);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.footer-col {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-col__text {
+    color: #fff;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.289);
+    font-weight: 400;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-links__link {
+    margin: 10px 20px 0;
+}
+
+.link-img {
+    filter: opacity(.6);
+}
+
+.link-img:hover {
+    filter: opacity(1);
+    transition: .2s ease-in;
+}
+
+/* Animated wind turbine */
+
+.turb-body {
+    position: absolute;
+    opacity: 1!important;
+}
+
+.turb-head {
+    position: relative;
+    bottom: 10px;
+    opacity: 1!important;
+}
+
+/* Value styles */
+
+#humidity {
+    color: #674bbb;
+}
+
+#sunrise {
+    color: rgb(255, 189, 66);
+}
+
+#sunset {
+    color: rgb(255, 112, 65);
+}
+
+
+
